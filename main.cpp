@@ -1,7 +1,11 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include "maze.h"
 
 int main() {
+
+    std::vector<std::vector<char>> grid(11, std::vector<char>(21, '#'));
 
     std::string user_command{};
 
@@ -22,7 +26,7 @@ int main() {
         }
 
         else if (user_command == "2") {
-            // showMaze()
+            showMaze(grid);
         }
 
         else if (user_command == "3") {
