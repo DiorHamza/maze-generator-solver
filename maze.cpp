@@ -10,3 +10,14 @@ void showMaze(const std::vector<std::vector<char>>& grid) {
         std::cout << "\n";
     }
 }
+
+void generateMaze(std::vector<std::vector<char>>& grid) {
+
+    for (int row = 0; row < grid.size(); row++) {
+        for (int col = 0; col < grid[row].size(); col++) {
+            grid[row][col] = '#';
+        }
+    }
+
+    grid[1][1] = ' ';
+}

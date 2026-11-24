@@ -22,7 +22,7 @@ int main() {
         std::getline(std::cin, user_command);
 
         if (user_command == "1") {
-            // generateMaze()
+            generateMaze(grid);
         }
 
         else if (user_command == "2") {
